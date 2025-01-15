@@ -1,0 +1,7 @@
+services:
+  redirector:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./db:/app/db
