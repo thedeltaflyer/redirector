@@ -1,6 +1,6 @@
 # Redirector
 
-[![Build Status](https://github.com/thedeltaflyer/redirector/workflows/Run%20Tests/badge.svg?branch=main)](https://github.com/thedeltaflyer/redirector/actions?query=branch%3Amain)
+[![Build Status](https://github.com/thedeltaflyer/redirector/actions/workflows/redirector.yml/badge.svg?branch=main)](https://github.com/thedeltaflyer/redirector/actions/workflows/redirector.yml?query=branch%3Amain)
 [![codecov](https://codecov.io/gh/thedeltaflyer/redirector/branch/main/graph/badge.svg)](https://codecov.io/gh/thedeltaflyer/redirector)
 [![Go Report Card](https://goreportcard.com/badge/github.com/thedeltaflyer/redirector)](https://goreportcard.com/report/github.com/thedeltaflyer/redirector)
 [![Go Reference](https://pkg.go.dev/badge/github.com/thedeltaflyer/redirector?status.svg)](https://pkg.go.dev/github.com/thedeltaflyer/redirector?tab=doc)
