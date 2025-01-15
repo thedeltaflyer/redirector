@@ -1,5 +1,11 @@
 # Redirector
 
+[![Build Status](https://github.com/thedeltaflyer/redirector/workflows/Run%20Tests/badge.svg?branch=main)](https://github.com/thedeltaflyer/redirector/actions?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/thedeltaflyer/redirector/branch/main/graph/badge.svg)](https://codecov.io/gh/thedeltaflyer/redirector)
+[![Go Report Card](https://goreportcard.com/badge/github.com/thedeltaflyer/redirector)](https://goreportcard.com/report/github.com/thedeltaflyer/redirector)
+[![Go Reference](https://pkg.go.dev/badge/github.com/thedeltaflyer/redirector?status.svg)](https://pkg.go.dev/github.com/thedeltaflyer/redirector?tab=doc)
+[![Release](https://img.shields.io/github/release/thedeltaflyer/redirector.svg?style=flat-square)](https://github.com/thedeltaflyer/redirector/releases)
+
 The **Redirector** project is a URL redirection service designed to take long URLs and create shorter, more manageable links. It also includes support for generating QR codes and accessing data in different formats like JSON or plain text. The service is built using **Go (Golang)** and leverages the **Gin** framework for handling HTTP requests.
 
 **Redirector** was built for use on the [lnk.now](https://lnk.now) URL shortener, so its usefulness in other contexts may be limited.
