@@ -17,7 +17,6 @@ type mockKVWrapper struct {
 	exclusivePutFunc func(key []byte, value []byte) error
 	replaceFunc      func(key []byte, value []byte) ([]byte, error)
 	deleteFunc       func(key []byte) error
-	forceError       error
 }
 
 func (m *mockKVWrapper) Get(key []byte) ([]byte, error) {

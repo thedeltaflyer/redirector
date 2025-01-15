@@ -10,9 +10,7 @@ import (
 // HexToRGBA converts a hex color string to an RGBA color representation, supporting 3, 4, 6, or 8-character formats.
 func HexToRGBA(hex string) (color.RGBA, error) {
 	// If the string starts with "#", drop it
-	if strings.HasPrefix(hex, "#") {
-		hex = hex[1:]
-	}
+	hex = strings.TrimPrefix(hex, "#")
 
 	c := color.RGBA{}
 
