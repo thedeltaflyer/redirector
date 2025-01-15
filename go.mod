@@ -1,4 +1,4 @@
-module redirector
+module github.com/thedeltaflyer/redirector
 
 go 1.23.4
 

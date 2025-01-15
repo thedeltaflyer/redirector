@@ -12,7 +12,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 
-	"redirector/helpers"
+	"github.com/thedeltaflyer/redirector/helpers"
 )
 
 func Test_HandleGet(t *testing.T) {

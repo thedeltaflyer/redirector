@@ -1,7 +1,7 @@
 package models
 
 import (
-	"redirector/helpers"
+	"github.com/thedeltaflyer/redirector/helpers"
 
 	bolt "go.etcd.io/bbolt"
 )

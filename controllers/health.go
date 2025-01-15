@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"redirector/logging"
-	"redirector/models"
+	"github.com/thedeltaflyer/redirector/logging"
+	"github.com/thedeltaflyer/redirector/models"
 )
 
 // HealthController is responsible for handling health-related API requests.

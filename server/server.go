@@ -3,10 +3,10 @@ package server
 import (
 	"github.com/gin-gonic/gin"
 
-	"redirector/controllers"
-	"redirector/database"
-	"redirector/middleware"
-	"redirector/models"
+	"github.com/thedeltaflyer/redirector/controllers"
+	"github.com/thedeltaflyer/redirector/database"
+	"github.com/thedeltaflyer/redirector/middleware"
+	"github.com/thedeltaflyer/redirector/models"
 )
 
 // Run starts the HTTP server with the specified binding address and debug mode settings.

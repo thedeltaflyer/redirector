@@ -10,9 +10,9 @@ import (
 	"github.com/matoous/go-nanoid/v2"
 	"github.com/skip2/go-qrcode"
 
-	"redirector/helpers"
-	"redirector/logging"
-	"redirector/models"
+	"github.com/thedeltaflyer/redirector/helpers"
+	"github.com/thedeltaflyer/redirector/logging"
+	"github.com/thedeltaflyer/redirector/models"
 )
 
 // RedirectorController is responsible for handling redirection-related operations using key-value storage.

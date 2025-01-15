@@ -6,7 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"redirector/models"
+	"github.com/thedeltaflyer/redirector/models"
 )
 
 // TokenAuthMiddleware validates Bearer tokens using a KV store and blocks unauthorized requests.

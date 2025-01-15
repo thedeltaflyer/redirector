@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"redirector/logging"
+	"github.com/thedeltaflyer/redirector/logging"
 
 	bolt "go.etcd.io/bbolt"
 )

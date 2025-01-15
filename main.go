@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/sirupsen/logrus"
 
-	"redirector/database"
-	"redirector/logging"
-	"redirector/server"
+	"github.com/thedeltaflyer/redirector/database"
+	"github.com/thedeltaflyer/redirector/logging"
+	"github.com/thedeltaflyer/redirector/server"
 
 	flag "github.com/spf13/pflag"
 )
