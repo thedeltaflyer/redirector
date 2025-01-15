@@ -66,7 +66,7 @@ The project relies on these Go packages (defined in `go.mod`):
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/redirector.git
+   git clone https://github.com/thedeltaflyer/redirector.git
    cd redirector
    ```
 
@@ -226,23 +226,6 @@ When using the `/qr` endpoint, you can configure the QR code by supplying query 
 ### Example Request
 ```http
 GET /abc123/qr?size=300&level=H&bg_color=#ffffff&fg_color=#000000&border=true
-```
-
----
-
-## File Structure
-
-```plaintext
-├── controllers/         # Application controllers (e.g., redirector logic)
-├── database/            # Database initialization and configuration
-├── helpers/             # Helper functions (e.g., QR code utilities)
-├── logging/             # Logging utilities with logrus
-├── models/              # Data models (e.g., URL mappings)
-├── middleware/          # Authentication and other middleware
-├── server/              # HTTP server setup
-├── go.mod               # Dependency management
-├── Dockerfile           # Docker container specification
-├── main.go              # Entry point for the application
 ```
 
 ---
