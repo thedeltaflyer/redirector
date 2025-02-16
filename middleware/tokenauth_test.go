@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"crypto/sha512"
 	"errors"
 	"net/http"
 	"net/http/httptest"
@@ -76,7 +77,7 @@ func TestTokenAuthMiddleware(t *testing.T) {
 		{
 			name:           "Valid token",
 			authHeader:     "Bearer valid_token",
-			kvMock:         &mockKV{data: map[string][]byte{"valid_token": []byte("data")}},
+			kvMock:         &mockKV{data: map[string][]byte{string(sha512.New().Sum([]byte("valid_token"))): []byte("data")}},
 			expectedStatus: http.StatusOK,
 		},
 	}

@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"crypto/sha512"
 	"net/http"
 	"strings"
 
@@ -25,7 +26,8 @@ func TokenAuthMiddleware(kv models.KV) gin.HandlerFunc {
 			return
 		}
 		// Try to get the requested auth token from the database, if it exists the token is valid.
-		data, err := kv.Get([]byte(authData[1]))
+		// Use the SHA-512 sum so that we are not storing the actual token.
+		data, err := kv.Get(sha512.New().Sum([]byte(authData[1])))
 		if err != nil || data == nil {
 			c.AbortWithStatus(http.StatusUnauthorized)
 			return
