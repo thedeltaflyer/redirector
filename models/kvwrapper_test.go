@@ -7,6 +7,7 @@ import (
 	"github.com/thedeltaflyer/redirector/helpers"
 
 	bolt "go.etcd.io/bbolt"
+	boltErr "go.etcd.io/bbolt/errors"
 )
 
 func TestReplace(t *testing.T) {
@@ -189,7 +190,7 @@ func TestExclusivePut(t *testing.T) {
 			},
 			key:         []byte(""),
 			value:       []byte("value3"),
-			expectedErr: bolt.ErrKeyRequired,
+			expectedErr: boltErr.ErrKeyRequired,
 		},
 		{
 			name: "empty value with a valid key",
@@ -272,7 +273,7 @@ func TestPut(t *testing.T) {
 			name:        "empty key",
 			key:         []byte(""),
 			value:       []byte("value2"),
-			expectedErr: bolt.ErrKeyRequired,
+			expectedErr: boltErr.ErrKeyRequired,
 		},
 		{
 			name:        "empty value",
@@ -284,7 +285,7 @@ func TestPut(t *testing.T) {
 			name:        "empty key and value",
 			key:         []byte(""),
 			value:       []byte(""),
-			expectedErr: bolt.ErrKeyRequired,
+			expectedErr: boltErr.ErrKeyRequired,
 		},
 		{
 			name:        "large key and value",
@@ -324,8 +325,8 @@ func setupTestDB(t *testing.T) (*bolt.DB, func()) {
 	}
 
 	cleanup := func() {
-		db.Close()
-		os.Remove("test.db")
+		_ = db.Close()
+		_ = os.Remove("test.db")
 	}
 
 	return db, cleanup
